@@ -26,21 +26,20 @@ apt-get -y install openjdk-7-jdk
 apt-get -y install python-dev
 apt-get -y install pkg-config
 apt-get -y install autoconf
-apt-get -qq -y install automake
-apt-get -qq -y install libtool
-apt-get -qq -y install unzip
+apt-get -y install automake
+apt-get -y install libtool
+apt-get -y install unzip
 
 echo "Installing Cython"
 pip install Cython==0.21
+
 echo "Installing appdirs, jinja2, sh"
 pip install appdirs
 pip install jinja2
 pip install sh
+
 echo "Upgrading colorama"
 pip install --upgrade colorama
 
 echo "Installing buildozer"
-#git clone https://github.com/kivy/buildozer.git /home/vagrant/buildozer
-#cd /home/vagrant/buildozer
-#python setup.py install
 sudo easy_install buildozer
